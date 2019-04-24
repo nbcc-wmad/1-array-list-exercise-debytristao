@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace ArrayListSimpleEx
 {
     public partial class Form1 : Form
     {
+        ArrayList word = new ArrayList();
+
         public Form1()
         {
             InitializeComponent();
