@@ -22,8 +22,63 @@ namespace ArrayListSimpleEx
 
         private void btnShowMsg_Click(object sender, EventArgs e)
         {
-            word.Add("much so programming love I");
-            lblMessage.Show
+            lblMessage.Text = string.Empty;
+
+            word.Clear();
+
+            word.Add("I");
+            word.Add("love");
+            word.Add("programming");
+            word.Add("so");
+            word.Add("much");
+
+            foreach(object item in word)
+            {
+                lblMessage.Text += item + " ";
+            }
+        }
+
+        private void btnReverse_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = string.Empty;
+
+
+            word.Reverse();
+
+            foreach (object item in word)
+            {
+                lblMessage.Text += item + " ";
+            }
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
+            string adicional = txtSecondPos.Text.Trim();
+
+            lblMessage.Text = string.Empty;
+
+            word.Insert(1, adicional);
+
+            foreach (object item in word)
+            {
+                lblMessage.Text += item + " ";
+            }
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            lblMessage.Text = string.Empty;
+
+            word.RemoveAt(1);
+
+            foreach (object item in word)
+            {
+                lblMessage.Text += item + " ";
+            }
+
         }
     }
 }
