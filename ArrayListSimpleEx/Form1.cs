@@ -19,5 +19,11 @@ namespace ArrayListSimpleEx
         {
             InitializeComponent();
         }
+
+        private void btnShowMsg_Click(object sender, EventArgs e)
+        {
+            word.Add("much so programming love I");
+            lblMessage.Show
+        }
     }
 }
